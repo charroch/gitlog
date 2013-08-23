@@ -1,0 +1,39 @@
+- attributes("title") = "Scalatra: a tiny, Sinatra-like web framework for Scala"
+- attributes("headline") = "Welcome to Scalatra"
+
+p= "Hello, Scalate!"
+
+#example-d
+
+:javascript
+    var cal = new CalHeatMap();
+    cal.init({
+        itemSelector: "#example-d",
+        domain: "year",
+        subDomain: "day",
+        data: "datas-years.json",
+        start: new Date(2013, 0),
+        cellSize: 10,
+        range: 1,
+        legend: [20, 40, 60, 80]
+    });
+
+br
+
+#per-month
+
+:javascript
+    var perMonth = new CalHeatMap();
+    perMonth.init({
+        itemSelector: "#per-month",
+        domain: "month",
+        subDomain: "x_day",
+        data: "datas-years.json",
+        start: new Date(2013, 0),
+        cellSize: 50,
+        cellPadding: 5,
+        domainGutter: 20,
+        range: 12,
+        subDomainTextFormat: "%d fere {count}",
+        legend: [20, 40, 60, 80]
+    });

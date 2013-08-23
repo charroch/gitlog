@@ -1,0 +1,26 @@
+{
+  "name": "cal-heatmap",
+  "version": "3.1.0",
+  "main": [
+    "./cal-heatmap.js",
+    "./cal-heatmap.css"
+  ],
+  "dependencies": {
+    "d3": "~v3.0.6"
+  },
+  "ignore": [
+    "test/",
+    "src/"
+  ],
+  "homepage": "https://github.com/kamisama/cal-heatmap",
+  "_release": "3.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.1.0",
+    "commit": "f5f24923434daf2e4617fae9c07075ab656577c3"
+  },
+  "_source": "git://github.com/kamisama/cal-heatmap.git",
+  "_target": "~3.1.0",
+  "_originalSource": "cal-heatmap",
+  "_direct": true
+}

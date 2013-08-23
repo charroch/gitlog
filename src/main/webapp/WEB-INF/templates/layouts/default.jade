@@ -1,0 +1,22 @@
+-@ val title: String
+-@ val headline: String = title
+-@ val body: String
+
+!!! 5
+html
+  head
+    title= title
+
+    link{:rel => "stylesheet", :href => "bower_components/cal-heatmap/cal-heatmap.css"}
+    link{:rel => "stylesheet", :href => "bower_components/bootstrap/dist/css/bootstrap.css"}
+
+    script{:type => "text/javascript", :src  => "bower_components/jquery/jquery.js"}
+    script{:type => "text/javascript", :src  => "http://d3js.org/d3.v3.min.js"}
+    script{:type => "text/javascript", :src  => "bower_components/cal-heatmap/cal-heatmap.js"}
+    script{:type => "text/javascript", :src  => "bower_components/bootstrap/dist/js/bootstrap.js"}
+
+  body
+    #content
+      h1= headline
+      != body
+
