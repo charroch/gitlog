@@ -90,7 +90,7 @@ class GitProjectServlet extends GitlogStack with JacksonJsonSupport {
     import org.eclipse.jgit.storage.file.FileRepositoryBuilder
     import java.io.File
 
-    lazy val repo = new FileRepositoryBuilder().setGitDir(new File("///home/acsia/dev/android/tesco-groceries/.git")).readEnvironment().findGitDir.build
+    lazy val repo = new FileRepositoryBuilder().setGitDir(new File("///home/acsia/dev/android/ImageLoader/.git")).readEnvironment().findGitDir.build
     lazy val git = new Git(repo)
 
     def logs = git.log.call
